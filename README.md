@@ -1,6 +1,7 @@
 plgchk
 ======
 
+
 Copyleaks code check CLI
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
@@ -9,10 +10,14 @@ Copyleaks code check CLI
 [![License](https://img.shields.io/npm/l/plgchk.svg)](https://github.com/semuelle/plgchk/blob/master/package.json)
 
 <!-- toc -->
-* [Usage](#usage)
-* [Commands](#commands)
+- [plgchk](#plgchk)
+- [Usage](#usage)
+- [Commands](#commands)
 <!-- tocstop -->
 # Usage
+
+Rename `.env.template` to `.env` and fill in your Copyleaks email address and API key.
+
 <!-- usage -->
 ```sh-session
 $ npm install -g plgchk

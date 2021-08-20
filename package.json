@@ -1,0 +1,50 @@
+{
+  "name": "plgchk",
+  "description": "Copyleaks code check CLI",
+  "version": "0.0.0",
+  "author": "Sebastian Müller @semuelle",
+  "bin": {
+    "plgchk": "./bin/run"
+  },
+  "bugs": "https://github.com/semuelle/plgchk/issues",
+  "dependencies": {
+    "@oclif/command": "^1.8.0",
+    "@oclif/config": "^1.17.0",
+    "@oclif/plugin-help": "^3.2.3",
+    "dotenv": "^10.0.0",
+    "filereader": "^0.10.3",
+    "plagiarism-checker": "^3.0.1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.26.0",
+    "@oclif/test": "^1.2.8",
+    "chai": "^4.3.4",
+    "eslint": "^5.16.0",
+    "eslint-config-oclif": "^3.1.0",
+    "mocha": "^5.2.0",
+    "nyc": "^14.1.1"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/src"
+  ],
+  "homepage": "https://github.com/semuelle/plgchk",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "bin": "plgchk"
+  },
+  "repository": "semuelle/plgchk",
+  "scripts": {
+    "posttest": "eslint .",
+    "prepack": "oclif-dev readme",
+    "test": "nyc mocha --forbid-only \"test/**/*.test.js\"",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}
